@@ -15,5 +15,6 @@ galaxy_info:
   - development
 
 dependencies:
-  - role: ANXS.build-essential
-    when: nodejs_install_method is defined and nodejs_install_method == "source"
+# - role: ANXS.build-essential
+ - role: build-essential
+   when: nodejs_install_method is defined and nodejs_install_method == "source"
